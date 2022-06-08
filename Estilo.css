@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+header {
+  color: rgb(39, 255, 129);
+  text-align: center;
+}
+h3 {
+  background: rgb(39, 255, 129);
+  color: rgb(0, 0, 0);
+}
+i {
+  background: rgb(0, 0, 0);
+  color: rgb(39, 255, 129);
+}
+a {
+  background: rgb(0, 0, 0);
+  color: rgb(39, 255, 129);
+}
+details {
+  background: rgb(0, 0, 0);
+  color: rgb(39, 255, 129);
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+div {
+  clear: left;
+}
+footer {
+  clear: both;
+  text-align: center;
+}
+p {
+  background: rgb(0, 0, 0);
+  color: rgb(39, 255, 129);
+}
+.contenedor {
+  position: fixed;
+  left: 80%;
+  top: 20%;
+}
+.moneda {
+  background: rgba(39, 255, 129, 0.76);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 20%;
+  animation: salto 0.8s infinite;
+}
+.moneda::before {
+  content: '';
+  display: inline-block;
+  background: rgba(39, 255, 129, 0.76);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 20%;
+  left: -6px;
+  top: -2px;
+}
+.moneda::after {
+  content: '';
+  display: inline-block;
+  background-image: url("Imagenes/GokuSS4.png");
+
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  top: 2px;
+}
+@keyframes salto {
+  0%, 100% {top: 0;}
+  30% {top: -25px;}
+}
+.saludo {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 14em;
+  animation: anim 5s infinite;
+  position: relative;
+  left: 550px;
+}
+
+@keyframes anim {
+  from { width: 0; }
+}
